@@ -400,7 +400,6 @@ class TestExpansions(unittest.TestCase):
             self.assertTrue(self.get_values(response).startswith('8.8.8.8.query.senderbase.org'))
         except AssertionError:
             print(response)
-        except Exception:
             self.assertEqual(self.get_errors(response), "No data found by querying known RBLs")
 
     def test_reversedns(self):
