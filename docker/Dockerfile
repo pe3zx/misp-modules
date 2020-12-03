@@ -28,7 +28,7 @@ RUN set -eu \
 
 # Create MISP Modules
 RUN set -eu \
-        ;git clone https://github.com/MISP/misp-modules.git ${WORKDIR} \
+        ;git clone https://github.com/pe3zx/misp-modules.git ${WORKDIR} \
         ;virtualenv -p python3 ${VENV_DIR}/venv \
         ;cd ${WORKDIR} \
         ;${VENV_DIR}/venv/bin/pip3 install -I -r REQUIREMENTS --no-cache-dir \
